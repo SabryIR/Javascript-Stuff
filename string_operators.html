@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1>Javascript Datatypes</h1>
-        <p>An empty string has both a legal value and a type.</p>
-        <p id="demo"></p>
+        <h1>Javascript HTML Events</h1>
+        <h2>The onclick attribute</h2>
+        <p>Click the button to display the date.</p>
+        <button onclick="displayDate()">The time is?</button>
         <script>
-            let car = "";
-            document.getElementById("demo").innerHTML = "The value is: " + car + "<br>" + 
-            "The type is: " + typeof car;
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
         </script>
+        <p id="demo"></p>
     </body>
 </html>
